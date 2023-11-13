@@ -214,7 +214,7 @@ export default class CostAndUsageReports {
       }
     }
 
-    if (result.length > 0) {
+    if (unknownRows.length > 0) {
       unknownRows.map((inputDataRow: CostAndUsageReportsRow) => {
         const footprintEstimate = this.getEstimateForUnknownUsage(inputDataRow)
         if (footprintEstimate)
